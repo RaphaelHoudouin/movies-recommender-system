@@ -3,7 +3,7 @@ from joblib import load
 from db_helper import recommend, fetch_movie_poster  # Only import helper functions
 
 # Load model and data
-load_data = load("artifact/save_model.joblib")
+load_data = load("artifacts/save_model.joblib")
 dataframe = load_data['dataframe']
 similarity = load_data['similarity']
 
