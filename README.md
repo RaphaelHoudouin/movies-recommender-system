@@ -65,10 +65,6 @@ To get started with this project locally, you’ll need Python 3.8+ installed on
 
 Distributed under the GNU General Public License (GPL). See LICENSE for more information.
 
-## Contact
-
-For any questions or feedback, please contact the project maintainer: **rhoudouin**  
-GitHub: [rhoudouin](https://github.com/rhoudouin)
 
 ## Acknowledgements
 
@@ -76,6 +72,11 @@ GitHub: [rhoudouin](https://github.com/rhoudouin)
 - **Streamlit:** For creating the interactive web application.
 - **NumPy & Pandas:** For preprocessing and numerical computation.
 - **Joblib:** For model serialization and deployment.
+
+## Contact
+
+For any questions or feedback, please contact the project maintainer: **rhoudouin**  
+GitHub: [rhoudouin](https://github.com/rhoudouin)
 
 
 
