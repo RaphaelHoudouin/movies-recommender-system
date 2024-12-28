@@ -1,6 +1,6 @@
 from joblib import load
 
-load_data = load("artifact/save_model.joblib")
+load_data = load("artifacts/save_model.joblib")
 df = load_data['dataframe']
 similarity = load_data['similarity']
 
