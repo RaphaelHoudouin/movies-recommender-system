@@ -1,7 +1,6 @@
 [theme]
-primaryColor = "#BB86FC"      # Violet clair
-backgroundColor = "#121212"   # Noir/gris très sombre
-secondaryBackgroundColor = "#1F1F1F"  # Gris foncé
-textColor = "#E0E0E0"         # Blanc/gris clair
-font = "sans serif"
-
+primaryColor = "#4A90E2"      # Bleu vif
+backgroundColor = "#0B1A30"   # Bleu marine très foncé
+secondaryBackgroundColor = "#172A45"  # Bleu-gris foncé
+textColor = "#F1F1F1"         # Blanc clair
+font = "serif"
