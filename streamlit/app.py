@@ -60,3 +60,10 @@ if st.button("Get Similar Movie Suggestions"):
                 cols = st.columns(3)  # Create a new set of 3 columns
     else:
         st.warning("Please select a movie to get recommendations.")
+
+# Credits at the bottom of the main page
+st.markdown("""
+    ---
+    **Developed by [rhoudouin](https://github.com/rhoudouin).**  
+    For inquiries or feedback, feel free to visit the GitHub profile.
+""")
