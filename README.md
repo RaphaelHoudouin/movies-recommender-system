@@ -17,11 +17,13 @@ The **ML Movies Recommender System** is a machine learning-based application tha
 
 ### Dataset
 
-The system is powered by the **tmdb_5000_movies.csv** dataset, which is sourced from the Kaggle dataset:  
-[TMDB Movie Metadata](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv).  
-This dataset contains metadata for 5000 movies, including details such as genres, tags, keywords, and more.
+The system is powered by the **tmdb_5000_movies.csv** dataset, sourced from Kaggle:  
+[TMDB Movie Metadata](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv). This dataset contains metadata for 5000 movies, including genres, tags, keywords, and more.
 
-This project includes a user interface built using **Streamlit**, which allows users to interact with the recommender system and see the results displayed in a visually appealing format, including movie posters.
+The project features a user-friendly interface built with **Streamlit**, enabling users to:  
+- Interact with the recommender system.  
+- Input a movie title to receive recommendations.  
+- View results, including visually appealing movie posters.
 
 ### Live App
 Explore the app via this URL: [ML Movies Recommender](https://ricky-ml-movies-recommender.streamlit.app/).
