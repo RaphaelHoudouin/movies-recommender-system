@@ -1,4 +1,4 @@
-# ML Movies Recommender System
+# Movies Recommender System
 
 ## Table of Contents
 - [About The Project](#about-the-project)
