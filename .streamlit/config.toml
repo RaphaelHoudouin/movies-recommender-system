@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#BB86FC"      # Violet clair
-backgroundColor = "#202124"   # Noir/gris foncé
-secondaryBackgroundColor = "#292A2D"  # Gris métallique
-textColor = "#E0E0E0"         # Gris clair
+primaryColor = "#00FFC6"      # Vert néon
+backgroundColor = "#121212"   # Noir/gris sombre
+secondaryBackgroundColor = "#1F1F1F"  # Gris très foncé
+textColor = "#E8E8E8"         # Blanc cassé
 font = "sans serif"
