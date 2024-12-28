@@ -72,6 +72,7 @@ Distributed under the GNU General Public License (GPL). See LICENSE for more inf
 - **Streamlit:** For creating the interactive web application.
 - **NumPy & Pandas:** For preprocessing and numerical computation.
 - **Joblib:** For model serialization and deployment.
+- **Kaggle**: For accessing diverse datasets to power machine learning projects.
 
 ## Contact
 
