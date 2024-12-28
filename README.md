@@ -13,7 +13,7 @@
 
 ## About The Project
 
-The **ML Movies Recommender System** is a machine learning-based application that recommends movies based on user input. By utilizing the power of cosine similarity and content-based filtering, the system suggests movies similar to the one the user selects. This project includes a user interface built using **Streamlit**, which allows users to interact with the recommender system and see the results displayed in a visually appealing format, including movie posters.
+The **Movies Recommender System** is a machine learning-based application that recommends movies based on user input. By utilizing the power of cosine similarity and content-based filtering, the system suggests movies similar to the one the user selects. This project includes a user interface built using **Streamlit**, which allows users to interact with the recommender system and see the results displayed in a visually appealing format, including movie posters.
 
 The project features a user-friendly interface built with **Streamlit**, enabling users to:  
 - Interact with the recommender system.  
@@ -25,7 +25,8 @@ The project features a user-friendly interface built with **Streamlit**, enablin
 The system utilizes the **TMDB API** to fetch metadata and details for movies. This includes information such as genres, tags, keywords, and more, enabling accurate and personalized recommendations.
 
 ### Live App
-Explore the app via this URL: [ML Movies Recommender](https://ricky-ml-movies-recommender.streamlit.app/).
+
+Explore the app via this URL: [Movies Recommender](https://https://rhoudouin-movies-recommender-system.streamlit.app/).
 
 ## Key Features
 
