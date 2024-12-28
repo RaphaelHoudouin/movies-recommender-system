@@ -26,7 +26,7 @@ The system utilizes the **TMDB API** to fetch metadata and details for movies. T
 
 ### Live App
 
-Explore the app via this URL: [Movies Recommender](https://https://rhoudouin-movies-recommender-system.streamlit.app/).
+Explore the app via this URL: [Movies Recommender](https://rhoudouin-movies-recommender-system.streamlit.app/).
 
 ## Key Features
 
