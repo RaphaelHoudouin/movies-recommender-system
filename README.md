@@ -59,7 +59,7 @@ To get started with this project locally, you’ll need Python 3.8+ installed on
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-rhoudouin/movies-recommender-system.git
+   git clone https://github.com/rhoudouin/movies-recommender-system.git
 
 ## License
 
