@@ -12,6 +12,7 @@ input_data = dataframe['original_title'].values
 
 # Streamlit app title
 st.title('REEL IT IN 🎬')
+st.subheader('The Movie Recommendation App')
 
 # Dropdown for movie input
 select_input = st.selectbox(
