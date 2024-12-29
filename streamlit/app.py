@@ -15,7 +15,7 @@ st.title('REEL IT IN 🎬')
 
 # Dropdown for movie input
 select_input = st.selectbox(
-    "Select or type a movie to get similar recommendations. Enjoy discovering films! 🍿",
+    "Select a movie to get similar recommendations. Enjoy discovering films! 🍿",
     [""] + input_data
 )
 
