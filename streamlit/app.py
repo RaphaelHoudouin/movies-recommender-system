@@ -36,7 +36,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Liste des fichiers musicaux disponibles dans le dossier 'musics'
+# List of available music files in the 'musics' folder
 music_files = [
     'Johann Strauss II - The Blue Danube.mp3',
     'Dmitri Shostakovich - Walzer Nr 2.mp3',
@@ -44,8 +44,36 @@ music_files = [
     'Richard Wagner - Ride of the Valkyries.mp3'
 ]
 
-# Sélectionner un fichier aléatoire
+# Estimated durations of the music (in seconds)
+music_durations = {
+    'Johann Strauss II - The Blue Danube.mp3': 460,  # Example: 7 minutes and 40 seconds
+    'Dmitri Shostakovich - Walzer Nr 2.mp3': 300,   # Example: 5 minutes
+    'Johannes Brahms - Hungarian Dance no. 5.mp3': 210,  # Example: 3 minutes and 30 seconds
+    'Richard Wagner - Ride of the Valkyries.mp3': 370,  # Example: 6 minutes and 10 seconds
+}
+
+# Function to play the music
+def play_music(music_file):
+    music_path = os.path.join('streamlit', 'musics', music_file)
+    if os.path.exists(music_path):
+        st.audio(music_path, start_time=0)
+        duration = music_durations.get(music_file, 0)
+        time.sleep(duration)  # Wait for the music to finish
+        return True
+    else:
+        st.error(f"File not found: {music_file}")
+        return False
+
+# Select a random music file
 selected_music = random.choice(music_files)
+
+# Play the first music
+if play_music(selected_music):
+    # After the first music ends, play the next one
+    st.write("Changing music...")
+    time.sleep(2)  # A short pause before switching to the next music
+    selected_music = random.choice(music_files)  # Select a new random music
+    play_music(selected_music)  # Play the next music
 
 # Construire le chemin relatif vers le fichier sélectionné
 music_file = os.path.join('streamlit', 'musics', selected_music)
@@ -55,7 +83,7 @@ if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
     # Ajouter des informations non-cliquables au-dessus du lecteur audio
-    st.write('<p style="font-size:20px;">🎵 Play Music: {}</p>'.format(selected_music), unsafe_allow_html=True)
+    st.write('<p style="font-size:20px;">🎵 Play Music
     
     # Jouer automatiquement la musique lorsque l'app s'ouvre
     st.audio(music_file, start_time=0)
