@@ -20,8 +20,8 @@ select_input = st.selectbox(
     [""] + input_data
 )
 
-# Add space after the text
-st.markdown("<br>", unsafe_allow_html=True)  # Adds a line break (space)
+# Add space after the text using markdown
+st.markdown("<br><br>", unsafe_allow_html=True
 
 # Custom button style
 st.markdown(
