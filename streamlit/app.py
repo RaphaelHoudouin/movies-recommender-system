@@ -39,14 +39,14 @@ st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 # Centered subheading for the app with light grey color and reduced space
 st.markdown('<h3 class="subheading">Movies Recommender</h3>', unsafe_allow_html=True)
 
-# Add instructions with the custom class applied
-st.markdown(
-    '<div class="instructions">Select or type a movie you like, and get similar movie recommendations.<br>Enjoy discovering new films! 🍿</div>',
-    unsafe_allow_html=True,
-)
+# Instructions for the user
+st.markdown("""
+    Select or type a movie you like, and get similar movie recommendations.
+    Enjoy discovering new films! 🍿
+""", unsafe_allow_html=True)
 
-# Dropdown styling (space after the text)
-st.markdown("<style>div.stSelectbox { margin-top: 10px; }</style>", unsafe_allow_html=True)
+# Add space after the text using CSS styling
+st.markdown("<style>div.stSelectbox { margin-top: 20px; }</style>", unsafe_allow_html=True)
 
 # Dropdown for movie input with searchable feature
 select_input = st.selectbox(
