@@ -11,7 +11,7 @@ similarity = load_data['similarity']
 input_data = dataframe['original_title'].values
 
 # Streamlit app title
-st.title('Reel It In')
+st.title('REEL IT IN')
 
 # Dropdown for movie input
 select_input = st.selectbox("Input any film", [""] + input_data)
