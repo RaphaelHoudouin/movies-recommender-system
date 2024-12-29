@@ -36,16 +36,20 @@ st.markdown(
 # Music URL (ensure the correct file path)
 music_url = "https://github.com/rhoudouin/movies-recommender-system/blob/main/music/The%20Blue%20Danube%2C%20Op.%20314%20by%20Johann%20Strauss%20II.mp3?raw=true"
 
+# Add a placeholder to ensure automatic playback on load
+audio_played = False
+
 # Play music automatically when the app opens
-st.audio(music_url, start_time=0)
+if not audio_played:
+    st.audio(music_url, start_time=0)
+    audio_played = True
 
 # Add a button to stop the music
 stop_music = st.button("Stop Music")
 
 # Logic to handle stopping music by hiding the audio player when the button is pressed
 if stop_music:
-    st.audio(music_url, start_time=0, format="audio/mp3", use_container_width=True)  # Stops by not showing it again
-    st.write("Music Stopped.")  # Display message when the music is stopped
+    st.audio(None)  # This removes the audio player, stopping the music
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
