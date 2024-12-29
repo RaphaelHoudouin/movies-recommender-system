@@ -32,7 +32,7 @@ st.markdown('<h3 style="text-align: center;">Movie Recommender App</h3>', unsafe
 
 # Instructions for the user
 st.markdown("""
-    Select or type a movie you like, and get similar movie recommendations. <br><br>
+    Select or type a movie you like, and get similar movie recommendations.
     Enjoy discovering new films! 🍿
 """, unsafe_allow_html=True)
 
