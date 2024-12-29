@@ -43,7 +43,7 @@ if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
     # Add non-clickable information above the audio player
-    st.write('<p style="font-size:21px;">🎵 Play Music</p>', unsafe_allow_html=True)
+    st.write('<p style="font-size:20px;">🎵 Play Music</p>', unsafe_allow_html=True)
     
     # Automatically play the audio when the app opens
     st.audio(music_file, start_time=0)
