@@ -10,8 +10,22 @@ similarity = load_data['similarity']
 # Get movie titles
 input_data = dataframe['original_title'].values
 
-# Streamlit app title
-st.title('REEL IT IN 🎬')
+# Streamlit app title - Centered with custom CSS
+st.markdown(
+    """
+    <style>
+    .title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Centered title
+st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
 # Instructions for the user
 st.markdown("""
