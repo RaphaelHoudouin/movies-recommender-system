@@ -26,7 +26,7 @@ st.markdown(
         margin-bottom: 20px; /* Space below the subheading */
     }
     .instructions {
-        margin-bottom: 0px; /* Reduce space after instructions */
+        margin-bottom: -10px; /* Reduce space after instructions */
     }
     </style>
     """,
