@@ -39,10 +39,18 @@ music_url = "https://github.com/rhoudouin/movies-recommender-system/blob/main/mu
 # Add a placeholder to ensure automatic playback on load
 audio_played = False
 
+# Path to the local MP3 file in the 'music' folder
+music_file = os.path.join('music', 'The_Blue_Danube_Op_314.mp3')
+
+# Title and Description of the App
+st.title("Movies Recommender with Music 🎬🎶")
+st.markdown("""
+    Enjoy discovering films with soothing background music – *The Blue Danube* by Johann Strauss II. 
+    You can stop the music anytime by using the button below. 🍿
+""")
+
 # Play music automatically when the app opens
-if not audio_played:
-    st.audio(music_url, start_time=0)
-    audio_played = True
+st.audio(music_file, start_time=0)
 
 # Add a button to stop the music
 stop_music = st.button("Stop Music")
@@ -50,6 +58,7 @@ stop_music = st.button("Stop Music")
 # Logic to handle stopping music by hiding the audio player when the button is pressed
 if stop_music:
     st.audio(None)  # This removes the audio player, stopping the music
+    st.write("Music Stopped.")  # Display message when the music is stopped
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
