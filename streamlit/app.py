@@ -12,10 +12,9 @@ input_data = dataframe['original_title'].values
 
 # Streamlit app title
 st.title('REEL IT IN 🎬')
-st.markdown("### How it works:")
-st.markdown("1. Select or type a movie you like.")
-st.markdown("2. Get personalized recommendations.")
-select_input = st.selectbox("Select a movie from the list:", [""] + input_data)
+
+# Dropdown for movie input
+select_input = st.selectbox("Input any film from the list:", [""] + input_data)
 
 # Custom button style
 st.markdown(
