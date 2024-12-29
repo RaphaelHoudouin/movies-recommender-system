@@ -17,6 +17,12 @@ st.title('REEL IT IN')
 st.write("""
 Welcome to the Movie Recommendation App! 🎬  
 
+Here's how it works:
+1. Select or type a movie you like.
+2. Get movie recommendations based on your choice.
+
+Enjoy discovering new films! 🍿
+""")
 
 # Dropdown for movie input
 select_input = st.selectbox("Input any film", [""] + input_data)
@@ -65,13 +71,6 @@ if st.button("Get Similar Movie Suggestions"):
                 cols = st.columns(3)  # Create a new set of 3 columns
     else:
         st.warning("Please select a movie to get recommendations.")
-
-Here's how it works:
-1. Select or type a movie you like.
-2. Get movie recommendations based on your choice.
-
-Enjoy discovering new films! 🍿
-""")
 
 # Credits at the bottom of the main page
 st.markdown("""
