@@ -18,8 +18,8 @@ st.write("""
 Welcome to the Movie Recommendation App! 🎬  
 
 Here's how it works:
-1. Choose a movie you like from the dropdown list or type the name of a movie you enjoy.
-2. The app will recommend similar movies based on your choice. 
+1. Select or type a movie you like.
+2. Get movie recommendations based on your choice.
 
 Enjoy discovering new films! 🍿
 """)
