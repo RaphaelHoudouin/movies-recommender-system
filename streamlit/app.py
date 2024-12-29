@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import random  # Make sure to import the random module
+import time  # Import time for sleep
 from joblib import load
 from db_helper import recommend, fetch_movie_poster  # Ensure these helper functions are available
 
@@ -75,19 +76,6 @@ if play_music(selected_music):
     selected_music = random.choice(music_files)  # Select a new random music
     play_music(selected_music)  # Play the next music
 
-# Construire le chemin relatif vers le fichier sélectionné
-music_file = os.path.join('streamlit', 'musics', selected_music)
-
-# Vérifier si le fichier existe
-if not os.path.exists(music_file):
-    st.error(f"File not found: {music_file}")
-else:
-    # Ajouter des informations non-cliquables au-dessus du lecteur audio
-    st.write('<p style="font-size:20px;">🎵 Play Music
-    
-    # Jouer automatiquement la musique lorsque l'app s'ouvre
-    st.audio(music_file, start_time=0)
-
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
@@ -137,3 +125,4 @@ st.markdown("""
     **Developed by [rhoudouin](https://github.com/rhoudouin).**  
     For inquiries or feedback, feel free to visit the GitHub profile.
 """)
+
