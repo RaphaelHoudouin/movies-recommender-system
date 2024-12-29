@@ -13,58 +13,40 @@ input_data = dataframe['original_title'].values
 # Streamlit app title
 st.title('REEL IT IN 🎬')
 
-# Dropdown for movie input
-select_input = st.selectbox(
-    """Select or type a movie you like, and get similar movie recommendations. 
-    Enjoy discovering new films! 🍿""",
-    [""] + input_data
-)
+# Instructions for the user
+st.markdown("""
+    Select or type a movie you like, and get similar movie recommendations.  
+    Enjoy discovering new films! 🍿
+""")
 
 # Add space after the text using CSS styling
 st.markdown("<style>div.stSelectbox { margin-top: 20px; }</style>", unsafe_allow_html=True)
 
-# Custom button style
-st.markdown(
-    """
-    <style>
-    div.stButton > button:first-child {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 8px;
-    }
-    div.stButton > button:first-child:hover {
-        background-color: #45a049;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
+# Dropdown for movie input with searchable feature
+select_input = st.selectbox(
+    "Choose a movie:",
+    [""] + input_data,
+    key="movie_select"
 )
 
-# Generate recommendations
+# Add a loading spinner during recommendation processing
 if st.button("Get Similar Movie Suggestions"):
     if select_input:
-        # Get recommendations
-        recommended_movies = recommend(select_input)
-        st.markdown("Recommended Movies:")
+        with st.spinner('Fetching recommendations...'):
+            # Get recommendations
+            recommended_movies = recommend(select_input)
+            st.markdown("**Recommended Movies:**")
 
-        # Display movies with posters (3 per row)
-        cols = st.columns(3)  # Create 3 columns
-        for i, movie in enumerate(recommended_movies):
-            with cols[i % 3]:  # Loop through columns
-                poster_url = fetch_movie_poster(movie)  # Fetch poster
-                st.image(poster_url, caption=movie, use_column_width=True)
+            # Display movies with posters (3 per row)
+            cols = st.columns(3)  # Create 3 columns
+            for i, movie in enumerate(recommended_movies):
+                with cols[i % 3]:  # Loop through columns
+                    poster_url = fetch_movie_poster(movie)  # Fetch poster
+                    st.image(poster_url, caption=movie, use_column_width=True)
 
-            # Create new rows every 3 movies
-            if (i + 1) % 3 == 0 and i != len(recommended_movies) - 1:
-                cols = st.columns(3)  # Create a new set of 3 columns
+                # Create new rows every 3 movies
+                if (i + 1) % 3 == 0 and i != len(recommended_movies) - 1:
+                    cols = st.columns(3)  # Create a new set of 3 columns
     else:
         st.warning("Please select a movie to get recommendations.")
 
