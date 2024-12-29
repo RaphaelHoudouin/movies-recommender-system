@@ -27,8 +27,9 @@ st.markdown(
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
-# Centered subheading for the app
-st.markdown('<h3 style="text-align: center; color: #add8e6;">Movie Recommender App</h3>', unsafe_allow_html=True)
+# Centered subheading for the app with light grey color
+st.markdown('<h3 style="text-align: center; color: lightgray;">Movie Recommender App</h3>', unsafe_allow_html=True)
+
 
 # Instructions for the user
 st.markdown("""
