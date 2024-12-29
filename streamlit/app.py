@@ -1,7 +1,8 @@
 import streamlit as st
-import os  # Ensure to import the os module
+import os
+import random  # Make sure to import the random module
 from joblib import load
-from db_helper import recommend, fetch_movie_poster  # Only import helper functions
+from db_helper import recommend, fetch_movie_poster  # Ensure these helper functions are available
 
 # Load model and data
 load_data = load("artifacts/save_model.joblib")
@@ -108,4 +109,3 @@ st.markdown("""
     **Developed by [rhoudouin](https://github.com/rhoudouin).**  
     For inquiries or feedback, feel free to visit the GitHub profile.
 """)
-
