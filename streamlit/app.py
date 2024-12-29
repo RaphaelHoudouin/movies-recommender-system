@@ -42,25 +42,8 @@ music_file = os.path.join('streamlit', 'music', 'The Blue Danube, Op. 314 by Joh
 if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
-    # Initialize session state to manage music playback
-    if "play_music" not in st.session_state:
-        st.session_state.play_music = True  # Automatically start playing music on app load
-
-    # Display buttons for music control
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("▶️ Play Music"):
-            st.session_state.play_music = True
-
-    with col2:
-        if st.button("⏹️ Stop Music"):
-            st.session_state.play_music = False
-
-    # Handle music playback based on session state
-    if st.session_state.play_music:
-        st.audio(music_file, start_time=0)
-    else:
-        st.write("Music stopped.")
+    # Automatically play the audio when the app opens
+    st.audio(music_file, start_time=0)
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
