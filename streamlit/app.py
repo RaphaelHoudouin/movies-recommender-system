@@ -27,11 +27,14 @@ st.markdown(
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
+# Subheading for the app
+st.markdown('<p class="title" style="font-size: 18px;">Movie Recommender App</p>', unsafe_allow_html=True)
+
 # Instructions for the user
 st.markdown("""
-    Select or type a movie you like, and get similar movie recommendations.  
+    Select or type a movie you like, and get similar movie recommendations. <br><br>
     Enjoy discovering new films! 🍿
-""")
+""", unsafe_allow_html=True)
 
 # Add space after the text using CSS styling
 st.markdown("<style>div.stSelectbox { margin-top: 20px; }</style>", unsafe_allow_html=True)
