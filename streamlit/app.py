@@ -20,6 +20,9 @@ select_input = st.selectbox(
     [""] + input_data
 )
 
+# Add space after the text
+st.markdown("&nbsp;")  # Adds a small space
+
 # Custom button style
 st.markdown(
     """
