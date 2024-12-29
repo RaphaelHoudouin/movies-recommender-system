@@ -42,6 +42,11 @@ st.audio(music_url, start_time=0)
 # Add a button to stop the music
 stop_music = st.button("Stop Music")
 
+# Logic to handle stopping music by hiding the audio player when the button is pressed
+if stop_music:
+    st.audio(music_url, start_time=0, format="audio/mp3", use_container_width=True)  # Stops by not showing it again
+    st.write("Music Stopped.")  # Display message when the music is stopped
+
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
