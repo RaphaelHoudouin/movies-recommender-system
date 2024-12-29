@@ -14,10 +14,8 @@ input_data = dataframe['original_title'].values
 st.title('REEL IT IN 🎬')
 
 # Dropdown for movie input
-select_input = st.selectbox(
-    "Select a movie to get similar recommendations. Enjoy discovering films! 🍿",
-    [""] + input_data
-)
+st.markdown("Select a movie to get similar recommendations.")
+st.markdown("Enjoy discovering films! 🍿")
 
 # Custom button style
 st.markdown(
