@@ -35,17 +35,28 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Use relative path to the music file
-music_file = os.path.join('streamlit', 'music', 'The Blue Danube, Op. 314 by Johann Strauss II.mp3')
+# Liste des fichiers musicaux disponibles dans le dossier 'musics'
+music_files = [
+    'Johann Strauss II - The Blue Danube.mp3',
+    'Dmitri Shostakovich - Walzer Nr 2.mp3',
+    'Johannes Brahms - Hungarian Dance no. 5.mp3',
+    'Richard Wagner - Ride of the Valkyries.mp3'
+]
 
-# Check if the file exists
+# Sélectionner un fichier aléatoire
+selected_music = random.choice(music_files)
+
+# Construire le chemin relatif vers le fichier sélectionné
+music_file = os.path.join('streamlit', 'musics', selected_music)
+
+# Vérifier si le fichier existe
 if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
-    # Add non-clickable information above the audio player
-    st.write('<p style="font-size:20px;">🎵 Play Music</p>', unsafe_allow_html=True)
+    # Ajouter des informations non-cliquables au-dessus du lecteur audio
+    st.write('<p style="font-size:20px;">🎵 Play Music: {}</p>'.format(selected_music), unsafe_allow_html=True)
     
-    # Automatically play the audio when the app opens
+    # Jouer automatiquement la musique lorsque l'app s'ouvre
     st.audio(music_file, start_time=0)
 
 # Centered title
