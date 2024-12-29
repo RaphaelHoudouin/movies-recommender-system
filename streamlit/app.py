@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import random  # Ensure to import the random module
 from joblib import load
 from db_helper import recommend, fetch_movie_poster  # Ensure these helper functions are available
 
@@ -12,17 +11,9 @@ similarity = load_data['similarity']
 # Get movie titles
 input_data = dataframe['original_title'].values
 
-# Function for displaying the music player
+# Function for displaying the music player with a single track
 def display_music_player():
-    music_files = [
-        'Johann Strauss II - The Blue Danube.mp3',
-        'Dmitri Shostakovich - Walzer Nr 2.mp3',
-        'Johannes Brahms - Hungarian Dance no. 5.mp3',
-        'Richard Wagner - Ride of the Valkyries.mp3'
-    ]
-    
-    selected_music = random.choice(music_files)
-    music_file = os.path.join('streamlit', 'musics', selected_music)
+    music_file = os.path.join('streamlit', 'musics', 'Johann Strauss II - The Blue Danube.mp3')
 
     if os.path.exists(music_file):
         st.write('<p style="font-size:20px; text-align:left;">🎵 Play Music</p>', unsafe_allow_html=True)
@@ -111,4 +102,3 @@ st.markdown("""
     **Developed by [rhoudouin](https://github.com/rhoudouin).**  
     For inquiries or feedback, feel free to visit the GitHub profile.
 """)
-
