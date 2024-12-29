@@ -36,12 +36,11 @@ st.markdown(
 # Music URL (ensure the correct file path)
 music_url = "https://github.com/rhoudouin/movies-recommender-system/blob/main/music/The%20Blue%20Danube%2C%20Op.%20314%20by%20Johann%20Strauss%20II.mp3?raw=true"
 
-# Checkbox to control the music
-play_music = st.checkbox("Play Background Music")
+# Play music automatically when the app opens
+st.audio(music_url, start_time=0)
 
-# If checkbox is selected, play the music
-if play_music:
-    st.audio(music_url, start_time=0)
+# Add a button to stop the music
+stop_music = st.button("Stop Music")
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
