@@ -15,7 +15,9 @@ st.title('REEL IT IN 🎬')
 
 # Dropdown for movie input
 st.markdown("Select a movie to get similar recommendations.")
-st.markdown("Enjoy discovering films! 🍿")
+st.markdown("Enjoy discovering films! 🍿",
+    [""] + input_data
+)
 
 # Custom button style
 st.markdown(
