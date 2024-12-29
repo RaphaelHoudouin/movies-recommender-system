@@ -54,11 +54,11 @@ music_file = os.path.join('streamlit', 'musics', selected_music)
 if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
-    # Add non-clickable information above the audio player, aligned to the left
-    st.write('<p style="font-size:20px; text-align:left;">🎵 Play Music</p>', unsafe_allow_html=True)
+    # Add non-clickable information above the audio player
+    st.write('<p style="font-size:20px; text-align:center;">🎵 Play Music</p>', unsafe_allow_html=True)
 
-    # Play the music automatically when the app opens, without displaying the title and controls
-    st.audio(music_file, format="audio/mp3", use_container_width=True)  # Hide controls by using 'format' parameter
+    # Play the music automatically when the app opens, without displaying the title
+    st.audio(music_file, start_time=0)
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
