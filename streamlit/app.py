@@ -23,7 +23,7 @@ st.markdown(
         text-align: center;
         color: lightgray;
         margin-top: -20px; /* Negative margin to bring the subheading closer */
-        margin-bottom: 30px; /* Increased space below the subheading */
+        margin-bottom: 50px; /* Increased space below the subheading */
     }
     .instructions {
         margin-bottom: -10px; /* Reduce space after instructions */
