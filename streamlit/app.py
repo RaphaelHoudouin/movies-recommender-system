@@ -35,7 +35,7 @@ st.markdown(
 )
 
 # Use relative path to the music file
-music_file = os.path.join('music', 'The Blue Danube, Op. 314 by Johann Strauss II.mp3')
+music_file = os.path.join('streamlit', 'music', 'The Blue Danube, Op. 314 by Johann Strauss II.mp3')
 
 # Check if the file exists (for debugging)
 if not os.path.exists(music_file):
