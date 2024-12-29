@@ -33,22 +33,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Add the music with a checkbox to control playback
+# Music URL (ensure the correct file path)
 music_url = "https://github.com/rhoudouin/movies-recommender-system/blob/main/music/The%20Blue%20Danube%2C%20Op.%20314%20by%20Johann%20Strauss%20II.mp3?raw=true"
 
-# Initialize session state for music
-if 'play_music' not in st.session_state:
-    st.session_state.play_music = False
+# Checkbox to control the music
+play_music = st.checkbox("Play Background Music")
 
-# Checkbox to play/pause music
-play_music = st.checkbox("Play Background Music", value=st.session_state.play_music)
-
-# If the checkbox is selected, update session state and play music
+# If checkbox is selected, play the music
 if play_music:
-    st.session_state.play_music = True
     st.audio(music_url, start_time=0)
-else:
-    st.session_state.play_music = False
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
