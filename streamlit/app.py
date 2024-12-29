@@ -40,7 +40,7 @@ music_url = "https://github.com/rhoudouin/movies-recommender-system/blob/main/mu
 play_music = st.checkbox("Play Background Music")
 
 # If the checkbox is selected, play the music
-    if play_music:
+if play_music:
 
 
 # Centered title
