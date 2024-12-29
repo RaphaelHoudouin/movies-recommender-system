@@ -1,4 +1,5 @@
 import streamlit as st
+import os  # Ensure to import the os module
 from joblib import load
 from db_helper import recommend, fetch_movie_poster  # Only import helper functions
 
@@ -40,16 +41,15 @@ music_file = os.path.join('music', 'The Blue Danube, Op. 314 by Johann Strauss I
 if not os.path.exists(music_file):
     st.error(f"File not found: {music_file}")
 else:
+    # Play music automatically when the app opens
+    st.audio(music_file, start_time=0)
 
-# Play music automatically when the app opens
-st.audio(music_file, start_time=0)
+    # Add a button to stop the music
+    stop_music = st.button("Stop Music")
 
-# Add a button to stop the music
-stop_music = st.button("Stop Music")
-
-# Logic to handle stopping music by hiding the audio player when the button is pressed
-if stop_music:
-    st.audio(None)  # This removes the audio player, stopping the music
+    # Logic to handle stopping music by hiding the audio player when the button is pressed
+    if stop_music:
+        st.audio(None)  # This removes the audio player, stopping the music
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
@@ -100,5 +100,4 @@ st.markdown("""
     **Developed by [rhoudouin](https://github.com/rhoudouin).**  
     For inquiries or feedback, feel free to visit the GitHub profile.
 """)
-
 
