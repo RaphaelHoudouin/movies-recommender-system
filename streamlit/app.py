@@ -33,8 +33,13 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Path to the MP3 file in the 'music' folder
+# Use relative path to the music file
 music_file = os.path.join('music', 'The Blue Danube, Op. 314 by Johann Strauss II.mp3')
+
+# Check if the file exists (for debugging)
+if not os.path.exists(music_file):
+    st.error(f"File not found: {music_file}")
+else:
 
 # Play music automatically when the app opens
 st.audio(music_file, start_time=0)
