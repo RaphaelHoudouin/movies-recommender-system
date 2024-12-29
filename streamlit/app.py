@@ -19,8 +19,7 @@ Welcome to the Movie Recommendation App! 🎬
 
 Here's how it works:
 1. Choose a movie you like from the dropdown list or type the name of a movie you enjoy.
-2. The app will recommend similar movies based on your choice.
-3. Click on a suggested movie to learn more or watch (if available).  
+2. The app will recommend similar movies based on your choice. 
 
 Enjoy discovering new films! 🍿
 """)
