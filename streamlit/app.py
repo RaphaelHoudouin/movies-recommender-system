@@ -10,7 +10,7 @@ similarity = load_data['similarity']
 # Get movie titles
 input_data = dataframe['original_title'].values
 
-# Streamlit app title - Centered with custom CSS
+# Streamlit app title and subheading - Centered with custom CSS
 st.markdown(
     """
     <style>
@@ -24,6 +24,9 @@ st.markdown(
         color: lightgray;
         margin-top: -10px; /* Negative margin to bring the subheading closer */
         margin-bottom: 20px; /* Space below the subheading */
+    }
+    .instructions {
+        margin-bottom: 5px; /* Reduce space after instructions */
     }
     </style>
     """,
