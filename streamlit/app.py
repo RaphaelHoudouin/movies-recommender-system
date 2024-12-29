@@ -42,13 +42,6 @@ audio_played = False
 # Path to the local MP3 file in the 'music' folder
 music_file = os.path.join('music', 'The_Blue_Danube_Op_314.mp3')
 
-# Title and Description of the App
-st.title("Movies Recommender with Music 🎬🎶")
-st.markdown("""
-    Enjoy discovering films with soothing background music – *The Blue Danube* by Johann Strauss II. 
-    You can stop the music anytime by using the button below. 🍿
-""")
-
 # Play music automatically when the app opens
 st.audio(music_file, start_time=0)
 
