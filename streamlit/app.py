@@ -19,6 +19,11 @@ st.markdown(
         font-size: 40px;
         font-weight: bold;
     }
+    .subheading {
+        text-align: center;
+        color: lightgray;
+        margin-bottom: 20px; /* Adds space below the subheading */
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -27,9 +32,8 @@ st.markdown(
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
 
-# Centered subheading for the app with light grey color
-st.markdown('<h3 style="text-align: center; color: lightgray;">Movies Recommender</h3>', unsafe_allow_html=True)
-
+# Centered subheading for the app with light grey color and space below
+st.markdown('<h3 class="subheading">Movies Recommender</h3>', unsafe_allow_html=True)
 
 # Instructions for the user
 st.markdown("""
