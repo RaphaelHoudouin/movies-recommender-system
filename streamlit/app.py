@@ -22,7 +22,7 @@ st.markdown(
     .subheading {
         text-align: center;
         color: lightgray;
-        margin-top: -30px; /* Negative margin to bring the subheading closer */
+        margin-top: -40px; /* Negative margin to bring the subheading closer */
         margin-bottom: 20px; /* Space below the subheading */
     }
     </style>
