@@ -41,7 +41,7 @@ play_music = st.checkbox("Play Background Music")
 
 # If the checkbox is selected, play the music
 if play_music:
-
+    st.audio(music_url, start_time=0)
 
 # Centered title
 st.markdown('<p class="title">REEL IT IN 🎬</p>', unsafe_allow_html=True)
