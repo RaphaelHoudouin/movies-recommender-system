@@ -22,7 +22,7 @@ The project features a user-friendly interface built with **Streamlit**, enablin
 
 ### Dataset
 
-The system utilizes the **TMDB API** to fetch metadata and details for movies. This includes information such as genres, tags, keywords, and more, enabling accurate and personalized recommendations.
+The system utilizes the TMDB5000 dataset to fetch metadata and details for movies, including information such as genres, tags, keywords, and more, enabling accurate and personalized recommendations.
 
 ### Live App
 
