@@ -26,7 +26,7 @@ The system utilizes the TMDB5000 dataset to fetch metadata and details for movie
 
 ### Live App
 
-Explore the app via this URL: [REEL IT IN](https://rhoudouin-movies-recommender-system.streamlit.app/).
+Explore the app via this URL: [REEL IT IN](https://raphaelhoudouin-movies-recommender-system.streamlit.app/).
 
 ## Key Features
 
