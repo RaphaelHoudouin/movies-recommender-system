@@ -78,8 +78,10 @@ Distributed under the GNU General Public License (GPL). See LICENSE for more inf
 
 ## Contact
 
-For any questions or feedback, please contact the project maintainer: **rhoudouin**  
-GitHub: [rhoudouin](https://github.com/rhoudouin)
+For any questions or feedback, please contact the project maintainer: **RaphaelHoudouin**.  
+GitHub: [RaphaelHoudouin](https://github.com/RaphaelHoudouin)
+
+
 
 
 
