@@ -32,7 +32,7 @@ Explore the app via this URL: [REEL IT IN](https://raphaelhoudouin-movies-recomm
 - User-friendly input forms.
 - Interactive and easy-to-use interface.
 
-![Streamlit App Screenshot](https://github.com/RaphaelHoudouin/credit-risk-prediction/blob/main/screenshots/credit_risk_prediction_app_screenshot.png)
+![Streamlit App Screenshot](https://github.com/RaphaelHoudouin/movies-recommender-system/blob/main/screenshots/movies_recommender_app.png)
 
 
 ## Key Features
