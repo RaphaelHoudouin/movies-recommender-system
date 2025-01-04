@@ -28,6 +28,13 @@ The system utilizes the TMDB5000 dataset to fetch metadata and details for movie
 
 Explore the app via this URL: [REEL IT IN](https://raphaelhoudouin-movies-recommender-system.streamlit.app/).
 
+## Features
+- User-friendly input forms.
+- Interactive and easy-to-use interface.
+
+![Streamlit App Screenshot](https://github.com/RaphaelHoudouin/credit-risk-prediction/blob/main/screenshots/credit_risk_prediction_app_screenshot.png)
+
+
 ## Key Features
 
 1. **Movie Recommendations:**
