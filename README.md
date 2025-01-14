@@ -32,7 +32,7 @@ Explore the app via this URL: [REEL IT IN](https://raphaelhoudouin-movies-recomm
 - User-friendly input forms.
 - Interactive and easy-to-use interface.
 
-![Streamlit App Screenshot](https://github.com/RaphaelHoudouin/movies-recommender-system/blob/main/screenshots/movies_recommender_app.png)
+![Streamlit App Screenshot](https://github.com/raphaelhoudouin/movies-recommender-system/blob/main/screenshots/movies_recommender_app.png)
 
 
 ## Key Features
@@ -84,9 +84,8 @@ Distributed under the GNU General Public License (GPL). See LICENSE for more inf
 - **Kaggle**: For accessing diverse datasets to power machine learning projects.
 
 ## Contact
-
-For any questions or feedback, please contact the project maintainer: **RaphaelHoudouin**.  
-GitHub: [RaphaelHoudouin](https://github.com/RaphaelHoudouin).
+For any questions or feedback, please contact the project maintainer: **raphaelhoudouin**.  
+GitHub: [raphaelhoudouin](https://github.com/raphaelhoudouin).
 
 
 
